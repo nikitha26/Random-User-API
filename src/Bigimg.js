@@ -1,7 +1,6 @@
  import React from "react";
  import {Card,CardBody,CardHeader,CardText,CardTitle} from "reactstrap"
 
- console.log("hiiiii")
 const Bigimg = (details)=>{
     console.log(`${details} ***`)
     return(

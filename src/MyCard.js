@@ -4,7 +4,8 @@ import {FaEnvelope,FaPhone,FaLocationArrow} from "react-icons/fa"
  import Bigimg from "./Bigimg";
 
     const MyCard = ({details}) => {
-    //console.log(details.picture?.large)
+     console.log(details)
+     
 
     return(
         <Card>
@@ -12,12 +13,10 @@ import {FaEnvelope,FaPhone,FaLocationArrow} from "react-icons/fa"
                 <img height="150" width="150"
                     className="rounded-circle img-thumbnail border-danger"
                     src={details.picture?.large} 
-                    onClick={(details) => {
-                        console.log(`${details.name?.titile} ****`);
-                        <Bigimg details={details}/>
-                        //console.log(`${details.picture?.large} may be`);
+                    onClick={function({details}){
+                         <Bigimg details={details}/>
                     }}
-                />
+                />  
                <CardTitle>
                <h5>Hi,My name is </h5>
                     <h3 className="text-primary">
