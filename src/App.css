@@ -1,11 +1,31 @@
 .App {
 	min-height: 100vh;
+	background-color: rgb(6, 114, 238);
+	/* background-image: linear-gradient(to right,rgb(194, 50, 98) , rgb(30, 34, 104)); */
+
+}
+.btn{
+	padding:10px;
+	padding-left: 15px;
+	padding-right:15px;
+	border-radius: 30px;
+	background-color: white;
+	font-size: large;
+	font-weight: bold;
+	color:rgb(6, 114, 238);
 }
 .card {
-	margin-top: 125px;
+	margin-top: 80px;
 }
 img {
 	margin-top: -80px;
 }
-
-
+h2{
+	color: white;
+}
+h6{
+	color:white
+}
+.span{
+	border-bottom: 2px solid white;
+}

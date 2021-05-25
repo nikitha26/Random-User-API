@@ -3,7 +3,7 @@ import React, {useEffect, useState } from 'react';
 // import Reducer from './Reducer';
 //import UseEffect from './UseEffect';
 
-import {Container,Row,Col} from "reactstrap";
+import {Container,Row,Col,Button} from "reactstrap";
 import Axios from "axios";
 import "./App.css"
 import MyCard from './MyCard';
@@ -42,14 +42,24 @@ function App() {
   },[])
 
   return(
-     <Container fluid className="p-4 bg-primary App">
+     <Container fluid className="p-4  App">
        <Row>
-         <Col md={4} className="offset-md-4 mt-4">
-         <h4 className="text-center">Handle API</h4>
+           <Col md={12} className=" offset-md-12 ">
+           <h2 className="text-center">RANDOM USER API</h2>
+          <h6 className="text-center">This webpage is to call <span className="span">Random User Data</span>.</h6>
+           </Col>
+       </Row>  
+       <Row>
+         <Col md={4} className="offset-md-4 ">
             {/* <FetchData/> */}
             <MyCard details={details}/>  
           </Col>
        </Row>
+       <Row>
+         <Col md={5} className="offset-md-5 mt-3">
+             <button className="btn ml-2" onClick={fetchdata}>Get New User</button>
+         </Col>
+       </Row>  
      </Container>
   )
 }

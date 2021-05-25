@@ -23,9 +23,9 @@ const MyCard = ({details}) => {
                         <span>{details.name?.first}</span>
                         <span>{details.name?.last}</span>
                     </h3>
-                    <p><FaEnvelope/>{details.email}</p>
-                    <p><FaPhone/>{details.phone}</p>
-                    <p><FaLocationArrow/>{details.location?.city}</p>
+                    <p><FaEnvelope/> {details.email}</p>
+                    <p><FaPhone/> {details.phone}</p>
+                    <p><FaLocationArrow/> {details.location?.city}</p>
             </CardTitle>
             </CardBody>
         </Card>
